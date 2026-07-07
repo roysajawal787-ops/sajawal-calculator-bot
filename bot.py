@@ -1,4 +1,7 @@
 import sqlite3
+import os
+
+TOKEN = os.getenv("BOT_TOKEN")
 import logging
 import re
 from telegram import Update
@@ -13,7 +16,7 @@ from telegram.ext import (
 # ==========================
 # BOT TOKEN
 # ==========================
-TOKEN = "YAHAN_APNA_NAYA_BOT_TOKEN_DALNA"
+TOKEN = os.getenv("BOT_TOKEN")
 
 # ==========================
 # DATABASE
